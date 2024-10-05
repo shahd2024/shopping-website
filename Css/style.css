@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", system-ui;
+  padding-top: 48px;
+}
+header {
+  background-color: #dbdbdb;
+}
+
+.btn_header {
+  background-color: #fe4c50;
+}
+header p {
+  font-weight: 500;
+}
+h1 {
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.inner {
+  height: 200px;
+  border: 1px solid black;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.inner:hover {
+  background-color: #fe4c50;
+  color: white;
+}
+a,
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.product .card {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+  header .col-md-5 {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  header .col-md-7 {
+    order: 2;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header .col-md-7 {
+    h1 {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px) {
+  header .col-md-7 {
+    h1 {
+      font-size: 40px;
+    }
+  }
+}

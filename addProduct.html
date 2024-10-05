@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./images/logo.pnga" type="image/x-icon" />
+    <link rel="stylesheet" href="Css/all.min.css" />
+    <link rel="stylesheet" href="Css/bootstrap.min.css" />
+    <link rel="stylesheet" href="Css/style.css" />
+    <title>Shoptopia</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+        <a class="navbar-brand text-danger fs-3" href="index.html">Shoptopia</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="AllProducts.html">Products</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="addProduct.html">Add Product</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="categories">
+      <div class="container py-5">
+        <h2 class="my-2">Add product</h2>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="nameInput" >
+          <label for="nameInput">Name</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="price" >
+          <label for="price">Price</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="category" >
+          <label for="category">Category</label>
+        </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" placeholder="Leave a comment here" id="desc"></textarea>
+          <label for="desc" class="text-muted">Description</label>
+        </div>
+        <p class="text-danger text-center fs-5 d-none" id="warnMsg">All input are required</p>
+        <button type="submit" class="btn btn-success d-block ms-auto" id="submitBtn">Add product</button>
+      </div>
+    </div>
+      </div>
+    </section>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./Js/bootstrap.bundle.min.js"></script>
+    <script src="./Js/index.js"></script>
+  </body>
+</html>
